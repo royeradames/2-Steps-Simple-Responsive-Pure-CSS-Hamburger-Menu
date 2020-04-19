@@ -63,12 +63,13 @@ html {
 }
 
 label[for="input-hamburger"]{
+	display: inline-block;
 	color: #ffffff;
 	background: #a02620;
 	font-style: normal;
 	padding: .625rem;
-	display: inline-block;
 	width: 10vw;
+	text-align: center;
 }
 #input-hamburger{
 display: none;
@@ -93,6 +94,15 @@ display: none;
 	border-top: 1px solid #333333;
 	background-color: black;
 }
+.menu-links a:last-child{
+	border-bottom: 1px solid #333333;
+}
+.menu-links a:focus,
+.menu-links a:hover,
+.menu-links a:active{
+	background-color: white;
+	color: black;
+}
 /* End Menu Items */
 /* on Small screens */
 @media screen and (min-width: 750px){
@@ -113,11 +123,20 @@ display: none;
 		flex-direction: row;
 		color: #ffffff;
 		font-style: normal;
-		padding: .625rem;
+		min-height: 4vh;
+		
 	}
 	.menu-links a{
+		display: inline-block;
 		border-top: none;
 		letter-spacing: .18vw;
+		padding: 1.5rem;
+	}
+	
+}
+@media screen and (max-width: 330px){
+	label[for="input-hamburger"]{
+		background: none;
 	}
 }
 /* end on Small screens */
