@@ -91,11 +91,12 @@ display: none;
 	text-decoration: none;
 	display: block;
 	padding: 0.625rem;
-	border-top: 1px solid #333333;
+	border-top: .062rem solid #333333;
 	background-color: black;
+	text-transform: uppercase;
 }
 .menu-links a:last-child{
-	border-bottom: 1px solid #333333;
+	border-bottom: .062rem solid #333333;
 }
 .menu-links a:focus,
 .menu-links a:hover,
@@ -132,6 +133,9 @@ display: none;
 		letter-spacing: .18vw;
 		padding: 1.5rem;
 	}
+	.menu-links a:last-child{
+		border-bottom: none;
+	}
 	
 }
 @media screen and (max-width: 330px){
@@ -150,5 +154,10 @@ p{
 }
 p:first-child{
 	text-indent: 6vw;
+}
+h1{
+	text-align: center;
+	font-size: 2rem;
+	margin: 1rem;
 }
 /*End wrapper */
